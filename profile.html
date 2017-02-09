@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Profile</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/myStyle.css"> 
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4><span class="glyphicon glyphicon-lock"></span> Αλλαγή Κωδικού</h4>
+        </div>
+        <div class="modal-body">
+          <form role="form">
+            <div class="form-group">
+              <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Παλιός Κωδικός</label>
+              <input type="text" class="form-control" id="usrname" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+              <label for="psw1"><span class="glyphicon glyphicon-eye-open"></span> Νέος Κωδικός</label>
+              <input type="text" class="form-control" id="psw" placeholder="Enter password">
+            </div>
+			<div class="form-group">
+              <label for="psw2"><span class="glyphicon glyphicon-eye-open"></span>  Επιβεβαίωση Νέου Κωδικού</label>
+              <input type="text" class="form-control" id="psw" placeholder="Enter password">
+            </div>
+              <button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Υποβολή</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+          <p>Forgot <a href="#">Password?</a></p>
+        </div>
+      </div>
+      
+    </div>
+  </div> 
+</div>
+ 
+<script>
+$(document).ready(function(){
+    $("#myBtn").click(function(){
+        $("#myModal").modal();
+    });
+});
+</script>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+	  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <div class="myImage">
+            <img src="images/logo_panorama.png" alt="Panorama" height="60px" width="100px"/>
+	  </div>
+    </div>
+	<p class="navbar-text">Business Days</p>
+	<div class="collapse navbar-collapse" id="myNavbar">
+    <ul class="nav navbar-nav navbar-right">
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user"></span><span class="glyphicon glyphicon-bookmark"></span></a>
+	  <ul class="dropdown-menu">
+          <li><a href="#" id="myBtn">Αλλαγή Κωδικού</a></li>
+          <li><a href="#">Αποσύνδεση</a></li>
+    
+        </ul>
+	  </li>
+    </ul>
+  </div>
+  </div>
+</nav>
+ <nav class="navbar navbar-inverse visible-xs">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar2">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Δημήτρης Παπαδάκης</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar2">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#"><span class="glyphicon glyphicon-user"></span>  Το Προφίλ μου</a></li>
+        <li><a href="Companies.html"><span class="glyphicon glyphicon-briefcase"></span>  Οι Εταιρείες</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-duplicate"></span>  Αίτηση στα Business Days</a></li>
+        <li><a href="photos.html"><span class="glyphicon glyphicon-camera"></span>  Φωτογραφίες Business Days</a></li>
+		<li><a href="Aksiologish.html"><span class="glyphicon glyphicon-education"></span>  Αξιολόγηση και Βεβαίωση Παρακολούθησης</a></li>
+      </ul>
+    </div>
+  </div>
+</nav> 
+
+<div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-3 sidenav hidden-xs">
+      <h2>Δημήτρης Παπαδάκης</h2>
+	  <br>
+      <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a href="#"><span class="glyphicon glyphicon-user"></span>  Το Προφιλ μου</a></li>
+        <li><a href="Companies.html"><span class="glyphicon glyphicon-briefcase"></span>  Οι Εταιρείες</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-duplicate"></span>  Αίτηση στα Business Days</a></li>
+        <li><a href="photos.html"><span class="glyphicon glyphicon-camera"></span>  Φωτογραφίες Business Days</a></li>
+		<li><a href="Aksiologish.html"><span class="glyphicon glyphicon-education"></span>  Αξιολόγηση και Βεβαίωση Παρακολούθησης</a></li>
+      </ul><br>
+    </div>
+    <br>
+    
+	<div class="col-sm-9">
+   <div class="jumbotron">
+   
+	<div class="media">
+    <div class="media-left media-middle">
+      <img src="images/images3.jpg" class="img-circle" alt="male" width="250" height="250">
+	  <h3>Δημήτρης Παπαδάκης</h3>
+    </div>
+    <div class="media-body media-middle">
+      <h2 class="media-heading"> Στοιχεία Επικοινωνίας</h2>
+	  <br>
+      <p><span class="glyphicon glyphicon-phone-alt"></span> 6999999999</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> dimitrisPapadakis@hotmail.com</p>
+      <p><span class="glyphicon glyphicon-calendar"></span> Ημερομηνία Γέννησης : 21 Ιανουαρίου 1999</p>
+    </div>
+  </div>
+	<div class="media">
+	<h2><span class="glyphicon glyphicon-education"></span> Σπουδές:</h2>
+	<div class="media-left media-middle">
+      <p><b>2009-2013</b></p>
+	</div>
+	<div class="media-body">
+		<h3 class="media-heading media-middle">Τμήμα Διοικητικής Επιστήμης και Τεχνολογίας</h3>
+		<p>Οικονομικό Πανεπιστήμιο Αθηνών (πρώην ΑΣΟΕΕ)</p>
+	</div>
+	</div>
+	<div class="media">
+	<div class="media-left media-middle">
+      <p><b>2014-2016</b></p>
+	</div>
+	<div class="media-body">
+		<h3 class="media-heading media-middle">Διοίκησης Επιχειρήσεων(ΜΒΑ Athens)</h3>
+		<p>Οικονομικό Πανεπιστήμιο Αθηνών (πρώην ΑΣΟΕΕ)</p>
+	</div>
+ </div>
+	
+	</div>
+  </div>
+  </div>
+</div>
+<script>
+$(document).ready(function(){
+    $('.img-circle').tooltip({title: "Enter Photo!", placement: "top"}); 
+    
+});
+</script>
+</body>
+</html>

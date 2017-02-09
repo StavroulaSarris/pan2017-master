@@ -1,0 +1,66 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+body{
+	background-image:url("../images/panorama.jpg");
+	background-size: cover;
+	 background-repeat: no-repeat;
+     background-attachment: scroll;
+}
+.myCen {
+	text-align: center;
+}
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+.row.content {height: 550px}
+.navbar  {
+	background-color:#c63a46;
+	color: #31708f;
+	
+	border: 0 none;
+}
+   
+.sidenav {
+      background-color: #f1f1f1;
+      height: 100%;
+}
+.navbar-text {
+    font-size: 30px;
+}
+.glyphicon {
+	font-size: 25px;
+}
+/* On small screens, set height to 'auto' for the grid */
+@media screen and (max-width: 767px) {
+ .row.content {height: auto; width: auto; padding:10%;} 
+ }
+	.modal-header, h4, .close {
+      background-color: #5cb85c;
+      color:white !important;
+      text-align: center;
+      font-size: 30px;
+  }
+  .modal-footer {
+      background-color: #f9f9f9;
+  }
+  
+.modal-header{
+	padding:35px 50px;
+}
+
+.modal-body{
+	padding:40px 50px;
+}
+.btn-default{
+	box-shadow: 1px 2px 5px #000000;
+	background: #fff;
+    color: #000;
+}
+  .btn-default:hover {
+      background:#c63a46 ;
+      color: #000;
+   }
+.panel-heading{
+	text-align: center;
+	background:#c63a46;
+}
